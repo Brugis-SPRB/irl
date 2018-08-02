@@ -1,0 +1,136 @@
+<odoo>
+  <data>
+
+
+    <!-- Geo view -->
+    <record id="ir_ui_view_irlgeoview_lb72" model="ir.ui.view">
+      <field name="name">irl.irl.geo_view_lb72</field>
+      <field name="arch" type="xml">
+        <geoengine>
+          <field name="N_DOSSIER"/>
+        </geoengine>
+      </field>
+      <field eval="16" name="priority"/>
+      <field name="model">irl.dossier</field>
+      <field name="projection">EPSG:31370</field>
+      <field name="default_extent">0, 0, 300000, 300000</field>
+    </record>
+
+        <record id="geoengine_raster_layer_lb72" model="geoengine.raster.layer">
+            <field name="raster_type">wmts_cap</field>
+            <field name="name">urbisFR</field>
+            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/gwc/service/wmts?REQUEST=GetCapabilities</field>
+            <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
+            <field name="projection">EPSG:31370</field>
+            <field name="matrix_set">EPSG:31370</field>
+            <field eval="0" name="overlay"/>
+        </record>
+
+        <record id="geoengine_raster_wmslayer_lb72" model="geoengine.raster.layer">
+            <field name="raster_type">d_wms</field>
+            <field name="name">urbisNL</field>
+            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/ows</field>
+            <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
+            <field name="projection">EPSG:31370</field>
+            <field eval="1" name="overlay"/>
+        </record>
+
+        <record id="geoengine_vector_layer_72" model="geoengine.vector.layer">
+          <field name="geo_field_id" ref="irl.field_irl_dossier_geometry"/>
+          <field name="name">Geom</field>
+          <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
+          <field name="geo_repr">basic</field>
+          <field name="attribute_field_id" ref="field_irl_dossier_N_DOSSIER"/>
+          <field name="begin_color">#FF680A</field>
+        </record>
+
+    <!-- List view irl -->
+    <record model="ir.ui.view" id="irl_view_tree">
+        <field name="name">irl.dossier.tree</field>
+        <field name="model">irl.dossier</field>
+        <field name="arch" type="xml">
+            <tree string="irl">
+                <field name="ADPNID"/>
+                <field name="DETYPED"/>
+                <field name="PROCEDURE"/>
+                <field name="N_DOSSIER"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Visualisation/Creation d'un panneau -->
+    <record model="ir.ui.view" id="irl_form_view">
+        <field name="name">irl.dossier.form</field>
+        <field name="model">irl.dossier</field>
+        <field name="arch" type="xml">
+            <form string="Irl Formulaire">
+                <sheet>
+                    <group>
+                        <field name="ADPNID"/>
+                        <field name="DETYPED"/>
+                        <field name="PROCEDURE"/>
+                        <field name="N_DOSSIER"/>
+                        <field name="DATE_PREMIERE_DECISION"/>
+                        <field name="DERNIERE_DECISION"/>
+                        <field name="N_DE_POLICE_DEBUT"/>
+                        <field name="N_DE_POLICE_FIN"/>
+                        <field name="BOITE"/>
+                        <field name="ETAGE"/>
+                        <field name="SITUATION_EXACTE"/>
+                        <field name="COMMUNE"/>
+                        <field name="CODE_POSTAL"/>
+                        <field name="TYPE_DECISION"/>
+                        <field name="INTERDICTION_ACTUELLE"/>
+                        <field name="geometry" widget="geode_edit_map_readonly"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Modification de la toolbar de recherche dans la partie ajout/modification/suppression -->
+    <record model="ir.ui.view" id="irl_search_view">
+        <field name="name">irl.dossier.search</field>
+        <field name="model">irl.dossier</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="PROCEDURE"/>
+                <field name="N_DOSSIER"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Affichage en liste des irl -->
+    <record model="ir.actions.act_window" id="irl_list_action">
+        <field name="name">Dossier</field>
+        <field name="res_model">irl.dossier</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,geoengine</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Creer le premier irl</p><!-- Si pas de données messages d'info -->
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="act_irl_tree_view">
+        <field eval="1" name="sequence"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="irl_view_tree"/>
+        <field name="act_window_id" ref="irl_list_action"/>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="act_irl_form_view">
+        <field eval="2" name="sequence"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="irl_form_view"/>
+        <field name="act_window_id" ref="irl_list_action"/>
+    </record>
+
+    <record model="ir.actions.act_window.view" id="act_irl_geo_view">
+        <field eval="3" name="sequence"/>
+        <field name="view_mode">geoengine</field>
+        <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
+        <field name="act_window_id" ref="irl_list_action"/>
+    </record>
+
+  </data>
+</odoo>

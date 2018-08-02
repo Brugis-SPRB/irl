@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+
+      <!-- Panel global -->
+      <menuitem id="main_irl_menu" name="Irl Dossier" web_icon="irl,static/src/img/icon-irl.png"/>
+
+      <!-- Menu de gauche -->
+
+      <menuitem id="irl_menu" name="Irl"
+              parent="main_irl_menu"/><!-- Menu -->
+
+      <menuitem id="report_menu" name="Dossier" parent="irl_menu"
+              action="irl_list_action"/><!-- Sous-Menu -->
+      />
+
+  </data>
+ </odoo>
