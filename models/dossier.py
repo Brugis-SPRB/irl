@@ -12,7 +12,7 @@ class Dossier(geo_model.GeoModel):
     _name = 'irl.dossier'
 
     ADPNID = fields.Integer(string="Adpnid")
-    geometry = geo_fields.GeoPoint(required=True, srid=31370, gist_index=True)
+    geometry = geo_fields.GeoMultiPoint(required=True, srid=31370, gist_index=True)
     DETYPED = fields.Integer(string="Detyped")
     PROCEDURE = fields.Text(string="Procedure")
     N_DOSSIER = fields.Integer(string="Num. Dossier")
