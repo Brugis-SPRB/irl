@@ -68,8 +68,11 @@
                         <field name="DETYPED"/>
                         <field name="PROCEDURE"/>
                         <field name="N_DOSSIER"/>
+                        <field name="GESTIONNAIRE"/>
+                        <field name="PREMIERE_DECISION"/>
                         <field name="DATE_PREMIERE_DECISION"/>
                         <field name="DERNIERE_DECISION"/>
+                        <field name="DATE_DERNIERE_DECISION"/>
                         <field name="N_DE_POLICE_DEBUT"/>
                         <field name="N_DE_POLICE_FIN"/>
                         <field name="BOITE"/>
