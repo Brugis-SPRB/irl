@@ -1,0 +1,212 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* irl
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20170815\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-16 11:12+0000\n"
+"PO-Revision-Date: 2018-08-16 11:12+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_ADPNID
+msgid "Adpnid"
+msgstr "Adpnid"
+
+#. module: irl
+#: model:res.groups,name:irl.group_irl_manager
+msgid "Bedit school manager"
+msgstr "Bedit ecole manager"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_BOITE
+msgid "Boite"
+msgstr "Boite"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_CODE_POSTAL
+msgid "Code postal"
+msgstr "Code postal"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_COMMUNE
+msgid "Commune"
+msgstr "Commune"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: irl
+#: model:ir.actions.act_window,help:irl.irl_list_action
+msgid "Creer le premier irl"
+msgstr "Creer le premier irl"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_DATE_DERNIERE_DECISION
+msgid "Date de dernière decision"
+msgstr "Date de dernière decision"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_DATE_PREMIERE_DECISION
+msgid "Date de première décision"
+msgstr "Date de première décision"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_DERNIERE_DECISION
+msgid "Dernière décision"
+msgstr "Dernière décision"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_DETYPED
+msgid "Detyped"
+msgstr "Detyped"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: irl
+#: model:ir.actions.act_window,name:irl.irl_list_action
+#: model:ir.ui.menu,name:irl.report_menu
+msgid "Dossier"
+msgstr "Dossier"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_ETAGE
+msgid "Etage"
+msgstr "Etage"
+
+#. module: irl
+#: model:geoengine.vector.layer,name:irl.geoengine_vector_layer_72
+msgid "Geom"
+msgstr "Geom"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_geometry
+msgid "Geometry"
+msgstr "Geometry"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_GESTIONNAIRE
+msgid "Gestionnaire"
+msgstr "Gestionnaire"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_id
+msgid "ID"
+msgstr "ID"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_INTERDICTION_ACTUELLE
+msgid "Interdiction actuelle"
+msgstr "Interdiction actuelle"
+
+#. module: irl
+#: model:ir.ui.menu,name:irl.irl_menu
+msgid "Irl"
+msgstr "Irl"
+
+#. module: irl
+#: model:ir.ui.menu,name:irl.main_irl_menu
+msgid "Irl Dossier"
+msgstr "Irl Dossier"
+
+#. module: irl
+#: model:ir.ui.view,arch_db:irl.irl_form_view
+msgid "Irl Formulaire"
+msgstr "Irl Formulaire"
+
+#. module: irl
+#: model:res.groups,name:irl.group_irl_user
+msgid "Irl app user"
+msgstr "Irl app user"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier___last_update
+msgid "Last Modified on"
+msgstr "Dernière Modification le"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_N_DOSSIER
+msgid "Num. Dossier"
+msgstr "Num. Dossier"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_N_DE_POLICE_DEBUT
+msgid "Num. Police début"
+msgstr "Num. Police début"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_N_DE_POLICE_FIN
+msgid "Num. Police fin"
+msgstr "Num. Police fin"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_PREMIERE_DECISION
+msgid "Première decision"
+msgstr "Première decision"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_PROCEDURE
+msgid "Procedure"
+msgstr "Procedure"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_RUE
+msgid "Rue"
+msgstr "Rue"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_SITUATION_EXACTE
+msgid "Situation exacte"
+msgstr "Situation exacte"
+
+#. module: irl
+#: model:ir.model.fields,field_description:irl.field_irl_dossier_TYPE_DECISION
+msgid "Type décision"
+msgstr "Type décision"
+
+#. module: irl
+#: model:ir.ui.view,arch_db:irl.irl_view_tree
+msgid "irl"
+msgstr "irl"
+
+#. module: irl
+#: model:ir.model,name:irl.model_irl_dossier
+msgid "irl.dossier"
+msgstr "irl.dossier"
+
+#. module: irl
+#: model:geoengine.raster.layer,name:irl.geoengine_raster_layer_lb72
+msgid "urbisFR"
+msgstr "urbisFR"
+
+#. module: irl
+#: model:geoengine.raster.layer,name:irl.geoengine_raster_wmslayer_lb72
+msgid "urbisNL"
+msgstr "urbisNL"
