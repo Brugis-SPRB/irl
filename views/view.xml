@@ -1,7 +1,5 @@
 <odoo>
   <data>
-
-
     <!-- Geo view -->
     <record id="ir_ui_view_irlgeoview_lb72" model="ir.ui.view">
       <field name="name">irl.irl.geo_view_lb72</field>
@@ -96,6 +94,7 @@
             <search>
                 <field name="PROCEDURE"/>
                 <field name="N_DOSSIER"/>
+                <field name="TYPE_DECISION"/>
             </search>
         </field>
     </record>
