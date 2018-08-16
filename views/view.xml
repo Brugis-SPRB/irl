@@ -48,10 +48,10 @@
         <field name="model">irl.dossier</field>
         <field name="arch" type="xml">
             <tree string="irl">
-                <field name="ADPNID"/>
-                <field name="DETYPED"/>
                 <field name="PROCEDURE"/>
                 <field name="N_DOSSIER"/>
+                <field name="GESTIONNAIRE" />
+                <field name="COMMUNE" />
             </tree>
         </field>
     </record>
