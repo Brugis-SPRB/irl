@@ -98,6 +98,7 @@
                 <field name="PROCEDURE"/>
                 <field name="N_DOSSIER"/>
                 <field name="TYPE_DECISION"/>
+                <field name="COMMUNE" />
             </search>
         </field>
     </record>

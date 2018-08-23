@@ -2,7 +2,7 @@
   <data>
 
       <!-- Panel global -->
-      <menuitem id="main_irl_menu" name="Irl Dossier" web_icon="irl,static/src/img/icon-irl.png"/>
+      <menuitem id="main_irl_menu" name="Irl Dossier" web_icon="irl,static/img/icon-irl.png"/>
 
       <!-- Menu de gauche -->
 
