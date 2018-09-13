@@ -6,6 +6,7 @@
       <field name="arch" type="xml">
         <geoengine>
           <field name="N_DOSSIER"/>
+          <field name="PROCEDURE"/>
         </geoengine>
       </field>
       <field eval="16" name="priority"/>
