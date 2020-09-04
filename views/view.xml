@@ -15,39 +15,30 @@
       <field name="default_extent">0, 0, 300000, 300000</field>
     </record>
 
-        <record id="geoengine_raster_layer_lb72" model="geoengine.raster.layer">
+        <record id="geoengine_raster_layer_lb72_fr" model="geoengine.raster.layer">
             <field name="raster_type">wmts_cap</field>
             <field name="name">urbisFRGray</field>
-            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/gwc/service/wmts?REQUEST=GetCapabilities</field>
+            <field name="url">https://geoservices-urbis.irisnet.be/geoserver/gwc/service/wmts?REQUEST=GetCapabilities</field>
             <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
             <field name="projection">EPSG:31370</field>
             <field name="matrix_set">EPSG:31370</field>
             <field eval="0" name="overlay"/>
         </record>
 
-        <record id="geoengine_raster_layer_lb72" model="geoengine.raster.layer">
+        <record id="geoengine_raster_layer_lb72_nl" model="geoengine.raster.layer">
             <field name="raster_type">wmts_cap</field>
-            <field name="name">urbisFR</field>
-            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/gwc/service/wmts?REQUEST=GetCapabilities</field>
+            <field name="name">urbisNLGray</field>
+            <field name="url">https://geoservices-urbis.irisnet.be/geoserver/gwc/service/wmts?REQUEST=GetCapabilities</field>
             <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
             <field name="projection">EPSG:31370</field>
             <field name="matrix_set">EPSG:31370</field>
             <field eval="0" name="overlay"/>
-        </record>
-
-        <record id="geoengine_raster_wmslayer_lb72" model="geoengine.raster.layer">
-            <field name="raster_type">d_wms</field>
-            <field name="name">urbisNL</field>
-            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/ows</field>
-            <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
-            <field name="projection">EPSG:31370</field>
-            <field eval="1" name="overlay"/>
         </record>
 
         <record id="geoengine_raster_wmslayer_municipality_border_lb72" model="geoengine.raster.layer">
             <field name="raster_type">d_wms</field>
             <field name="name">Urbis:Mu</field>
-            <field name="url">http://geoservices-urbis.irisnet.be/geoserver/ows</field>
+            <field name="url">https://geoservices-urbis.irisnet.be/geoserver/ows</field>
             <field name="view_id" ref="ir_ui_view_irlgeoview_lb72"/>
             <field name="projection">EPSG:31370</field>
             <field eval="1" name="overlay"/>

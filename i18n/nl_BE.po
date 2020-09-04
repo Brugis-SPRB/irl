@@ -200,13 +200,3 @@ msgstr "irl"
 #: model:ir.model,name:irl.model_irl_dossier
 msgid "irl.dossier"
 msgstr "irl.dossier"
-
-#. module: irl
-#: model:geoengine.raster.layer,name:irl.geoengine_raster_layer_lb72
-msgid "urbisFR"
-msgstr "urbisFR"
-
-#. module: irl
-#: model:geoengine.raster.layer,name:irl.geoengine_raster_wmslayer_lb72
-msgid "urbisNL"
-msgstr "urbisNL"
